@@ -34,6 +34,10 @@ header {
 }
 
 .cards h2 {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+
   padding: 8px 16px;
   border: 1px solid #746615;
   border-radius: 6px;
