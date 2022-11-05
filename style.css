@@ -8,6 +8,10 @@ ul {
   list-style: none;
 }
 
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   background-color: #121214;
   background-image: url(./assets/bg.svg);
@@ -37,8 +41,50 @@ header {
   display: flex;
   gap: 16px;
   justify-content: center;
+  align-items: center;
 
   padding: 8px 16px;
   border: 1px solid #746615;
   border-radius: 6px;
+
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 53px;
+
+  color: #f7dd43;
+}
+
+.cards h2 span {
+  color: #e1e1e6;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cards ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards ul li strong {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+
+  color: #e1e1e6;
+}
+
+.cards ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 270px;
+}
+
+.cards ul li + li {
+  padding-top: 24px;
+  border-top: solid #323238 1px;
 }
