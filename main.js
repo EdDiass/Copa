@@ -1,13 +1,19 @@
-function createCard() {
+function createJogo(jogador1, hora, jogador2) {
+  return `
+       <li>
+              <img src="./assets/icon-${jogador1}.svg" alt="Bandeira do ${jogador1}" />
+              <strong>${hora}</strong>
+              <img src="./assets/icon-${jogador2}.svg" alt="Bandeira da ${jogador2}" />
+        </li>
+  `
+}
+
+function createCard(data, dia, jogos) {
   return `
    <div class="cards">
-          <h2>24/11 <span>quinta</span></h2>
+          <h2>${data} <span>${dia}</span></h2>
           <ul>
-            <li>
-              <img src="./assets/icon-brazil.svg" alt="" />
-              <strong>16:00</strong>
-              <img src="./assets/icon-serbia.svg" alt="" />
-            </li>
+          ${jogos}
           </ul>
         </div>
   `
@@ -18,8 +24,12 @@ document.querySelector("#app").innerHTML = `
         <img src="./assets/logo.svg" alt="logo" />
       </header>
       <main id="cards">
-       ${createCard()}
-       ${createCard()}
-       ${createCard()}
+       ${createCard("24/11", "quinta", createJogo("brazil", "16:00", "serbia"))}
+       ${createCard(
+         "28/11",
+         "segunda",
+         createJogo("brazil", "13:00", "serbia")
+       )}
+       ${createCard("02/11", "sexta", createJogo("brazil", "16:00", "serbia"))}
       </main>
 `
