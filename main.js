@@ -8,7 +8,7 @@ function createJogo(jogador1, hora, jogador2) {
   `
 }
 
-let delay = -0.4
+let delay = -0.2
 function createCard(data, dia, jogos) {
   delay = delay + 0.4
   return `
