@@ -28,8 +28,12 @@ document.querySelector("#app").innerHTML = `
        ${createCard(
          "28/11",
          "segunda",
-         createJogo("brazil", "13:00", "serbia")
+         createJogo("brazil", "13:00", "switzerland")
        )}
-       ${createCard("02/11", "sexta", createJogo("brazil", "16:00", "serbia"))}
+       ${createCard(
+         "02/11",
+         "sexta",
+         createJogo("brazil", "16:00", "cameroon")
+       )}
       </main>
 `
