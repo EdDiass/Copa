@@ -95,3 +95,30 @@ header {
   padding-top: 24px;
   border-top: solid #323238 1px;
 }
+
+.cards ul li strong:hover,
+.cards ul li img:hover,
+.cards h2:hover {
+  transform: scale(1.1);
+}
+
+.cards ul li strong,
+.cards ul li img,
+.cards h2 {
+  transition: transform 0.3s;
+}
+
+.cards {
+  opacity: 0;
+  animation: appear 2s forwards;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
