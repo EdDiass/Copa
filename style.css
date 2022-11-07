@@ -8,18 +8,21 @@
   --card-tittle-primaria: #746615;
   --card-cor-primaria: #f7dd43;
   -card-bg-cor: #1d1c19;
+  --bg: url(./assets/bg-yellow.svg);
 }
 
 body.blue {
   --card-tittle-primaria: #338af3;
   --card-cor-primaria: #338af3;
   --card-bg-cor: #202024;
+  --bg: url(./assets/bg-blue.svg);
 }
 
 body.green {
   --card-tittle-primaria: #047c3f;
   --card-cor-primaria: #047c3f;
   --card-bg-cor: #1a1f1b;
+  --bg: url(./assets/bg-green.svg);
 }
 
 ul {
@@ -32,14 +35,16 @@ body * {
 
 body {
   background-color: #121214;
-  background-image: url(./assets/bg.svg);
-  background-position-x: center;
-  background-position-y: -715px;
+  background-image: var(--bg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #app {
   width: fit-content;
-  margin: 52px auto;
+  margin: auto;
+  padding-top: 52px;
 }
 
 header {
